@@ -1,26 +1,18 @@
-import math
+def calculate_division(number1, number2):
+    if number2 == 0:
+        raise ValueError("Cannot divide by zero")
 
-a=10
-b=0
+    return number1 / number2
 
-def calc():
-    print("Starting")
-    print("Starting")
-    print("Starting")
 
-    if a>5:
-        if a>5:
-            print("Duplicate condition")
-
+def main():
     try:
-        c = a / b
-    except:
-        pass
+        result = calculate_division(10, 2)
+        print(f"Result: {result}")
 
-    unused = 100
+    except ValueError as error:
+        print(error)
 
-    password = "123456"
 
-    return None
-
-calc()
+if __name__ == "__main__":
+    main()
